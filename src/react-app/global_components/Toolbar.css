@@ -1,0 +1,43 @@
+.toolbar {
+  background-color: #333; /* Dark background */
+  height: 85px; /* Fixed height */
+  width: 100%;
+  position: fixed; /* Fixes the toolbar to the top */
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between; /* Aligns content to left/right */
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.toolbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.toolbar-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.toolbar-navigation li {
+  margin-left: 20px;
+}
+
+.toolbar-navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.toolbar-navigation a:hover,
+.toolbar-navigation a.active { /* Use React Router's active class */
+  background-color: #04AA6D;
+  border-radius: 4px;
+}
